@@ -6,6 +6,9 @@ public class Medium {
     private int erscheinungsjahr;
     private boolean verfuegbarkeit;
 
+    public Medium(String id, String titel, String beschreibung, String autor, int erscheinungsjahr, boolean verfuegbarkeit) {
+    }
+
     public String getId() {
         return id;
     }
@@ -55,7 +58,7 @@ public class Medium {
     }
 
 
-    private void anzeigen() {
+    public void anzeigen() {
 
         System.out.println("ID: " + getId());
         System.out.println("Titel: " + getTitel());
