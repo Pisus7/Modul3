@@ -1,12 +1,18 @@
 public class Medium {
     private String id;
-    private String titel;
+    public String titel;
     private String beschreibung;
     private String autor;
     private int erscheinungsjahr;
     private boolean verfuegbarkeit;
 
     public Medium(String id, String titel, String beschreibung, String autor, int erscheinungsjahr, boolean verfuegbarkeit) {
+        this.id = id;
+        this.titel = titel;
+        this.beschreibung = beschreibung;
+        this.autor = autor;
+        this.erscheinungsjahr = erscheinungsjahr;
+        this.verfuegbarkeit = verfuegbarkeit;
     }
 
     public String getId() {
@@ -57,17 +63,12 @@ public class Medium {
         this.erscheinungsjahr = erscheinungsjahr;
     }
 
-
     public void anzeigen() {
-
         System.out.println("ID: " + getId());
         System.out.println("Titel: " + getTitel());
         System.out.println("Beschreibung: " + getBeschreibung());
         System.out.println("Autor: " + getAutor());
         System.out.println("Erscheinungsjahr: " + getErscheinungsjahr());
-        System.out.println("Verfügbarkeit: " + isVerfuegbarkeit() );
+        System.out.println("Verfügbarkeit: " + isVerfuegbarkeit());
     }
-
-
-
 }

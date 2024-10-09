@@ -1,11 +1,7 @@
-public class EBooks extends Medium{
-
-
-
+public class EBooks extends Medium {
     private int seitenanzahl;
     private String auflage;
     private String kommentar;
-
     private String genre;
 
     public EBooks(String id, String titel, String beschreibung, String autor, int erscheinungsjahr, boolean verfuegbarkeit, int seitenanzahl, String auflage, String kommentar, String genre) {
@@ -24,8 +20,6 @@ public class EBooks extends Medium{
         this.seitenanzahl = seitenanzahl;
     }
 
-
-
     public String getAuflage() {
         return auflage;
     }
@@ -42,8 +36,6 @@ public class EBooks extends Medium{
         this.kommentar = kommentar;
     }
 
-
-
     public String getGenre() {
         return genre;
     }
@@ -52,14 +44,11 @@ public class EBooks extends Medium{
         this.genre = genre;
     }
 
-    public void anzeigen(){
+    public void anzeigen() {
         super.anzeigen();
-
         System.out.println("Seitenanzahl" + seitenanzahl);
         System.out.println("auflage" + auflage);
         System.out.println("kommentar" + kommentar);
         System.out.println("genre" + genre);
-
-
     }
 }

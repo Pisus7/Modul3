@@ -7,8 +7,7 @@ public class Filme extends Medium {
     private String erscheinungsdatum;
     private String genre;
 
-    public Filme(String id, String titel, String beschreibung, String autor, int erscheinungsjahr, boolean verfuegbarkeit,
-                 String regisseur, int spielzeit, boolean uhd, boolean hd, String kommentar, String erscheinungsdatum, String genre) {
+    public Filme(String id, String titel, String beschreibung, String autor, int erscheinungsjahr, boolean verfuegbarkeit, String regisseur, int spielzeit, boolean uhd, boolean hd, String kommentar, String erscheinungsdatum, String genre) {
         super(id, titel, beschreibung, autor, erscheinungsjahr, verfuegbarkeit);
         this.regisseur = regisseur;
         this.spielzeit = spielzeit;
@@ -81,6 +80,4 @@ public class Filme extends Medium {
         System.out.println("Regisseur: " + getRegisseur());
         System.out.println("Spielzeit: " + getSpielzeit() + " Minuten");
     }
-
-
 }
